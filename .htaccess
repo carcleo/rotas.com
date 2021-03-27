@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+
+  RewriteEngine on
+  
+  Options -Indexes
+
+  RewriteCond %{HTTP_HOST} !^localhost
+  RewriteRule ^(.*)$ /public/$1 [L]
+
+  RewriteCond %{HTTP_HOST} ^localhost
+  #abaixo vai o nome da pasta dentro se localhot que foi usada para a estruturação do sistema
+  RewriteRule ^(.*)$ /rotas.com/public/$1 
+  
+  
+</IfModule>

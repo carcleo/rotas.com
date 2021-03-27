@@ -1,0 +1,102 @@
+
+:root {
+	--widthContainer: 100vw;
+  }
+  
+  ul {
+	list-style: none;
+  }
+  
+  div.slider {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	background: #000;
+  }
+  
+  div.slider div.container {
+	position: relative;
+	width: var(--widthContainer);
+	overflow: hidden;
+  }
+  
+  div.slider div.container ul {
+	position: relative;
+	display: inline-flex;
+	width: auto;
+  }
+  
+  div.slider div.container ul li {
+	position: relative;
+	width: var(--widthContainer);
+  }
+  
+  div.slider div.container ul li img{
+	width: 100%;
+  }
+  
+  div.slider div.container label {
+	  position: absolute;
+	  opacity: 0;
+	  width: 100px;
+	  height: 50px;
+	  left: calc( 50% - 50px );
+	  top: calc( 50% - 25px );
+	  z-index:2;
+	  color: #fff;
+  }
+  
+  div.slider div.container button {
+	  position: absolute;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  width: 50px;
+	  height: 50px;
+	  top: calc( 50% - 25px );
+	  background: none;
+	  border-radius: 50%;
+	  z-index:2;
+	  color: #fff;
+	  font-size: 2em;
+  }  
+  
+  div.slider div.container button:hover {
+	  cursor: pointer;
+	  background: #999;
+  }
+  
+  div.slider div.container button#back {
+	  left: 10px;
+  }
+  
+  div.slider div.container button#front {
+	  right: 10px;
+  }
+  
+  div.slider div.container ul li span {
+	  position: absolute;
+	  display: flex;
+	  font-size: 2.5vw;
+	  top: 0;
+	  left: 0;
+	  color: #fff;
+	  background: rgba(0,0,0, .3);
+	  padding: 10px;
+	  width: 100%;
+  }		
+  
+  div.slider div.container ul li span:hover {
+	  background: #999;
+	  cursor:pointer;
+  }
+  
+  .ulToRight {
+	  left: calc(left - var(--widthContainer) );
+  }
+  
+  .ulToLeft {
+	  left: calc(left + var(--widthContainer));
+  }

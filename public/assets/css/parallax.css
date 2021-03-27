@@ -1,0 +1,16 @@
+#detalhes {
+    width: 100vw;
+    height: 600px;
+    background-image: url("../../../public/assets/imgs/parallax/1.jpg") !important;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+}
+#contato {
+    width: 100vw;
+    height: 800px;
+    background-image: url("../../../public/assets/imgs/parallax/2.jpg") !important;
+    background-size: cover;    
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+}

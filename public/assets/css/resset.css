@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {    
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    transition: all 1s ease;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; /*Comprimir(diminuir) as medidas do elemento para não aumentá-lo quando adicinar margin e padding*/
+}
+
+.halfWeight {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh !important;
+}
+
+a  { 
+    text-decoration:none !important; 
+} 
+
+ul {
+    list-style: none;
+}
+
+
+.btnFechar {
+	display:inline-block;
+	margin-right:0;
+}
+
+div.chekout{
+    display:none;
+    flex-direction: column;
+}
+
+img.threeDots{
+    display:none;
+}
+
+.choisseAddress {
+    display: flex;
+}
+
+select {
+    width: 170px;
+}
+div.loading {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    top: 0;  
+    left: 0;    
+    width: 100vw;
+    height: 100vh;
+    background: rgba(220,220,220, .3);
+}
+
+input[type=text], 
+input[type=tel], 
+input[type=password], 
+input[type=resset], 
+input[type=email], 
+input[type=submit], 
+input[type=button], 
+select, 
+button,
+textarea {
+    display: inline-block;
+    height: 40px;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #777;
+}
+
+input[type=submit], 
+input[type=button], 
+button {
+    cursor: pointer;
+}
+
+input[type=text], 
+input[type=tel], 
+input[type=password], 
+input[type=email], 
+input[type=submit] {
+    text-align: right;
+}
+input[type=submit],
+button {
+    border-radius: 5px;
+}
+.center {
+    text-align: center;
+}
+
+form label {
+    display: inline-flex;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+}
+
+form textarea {
+    height: 120px;
+}
+.hidden {
+    display: none;
+}
+
+.erro {
+    color: red;
+}
+
+h1.erro,
+h2.erro,
+h3.erro,
+h4.erro,
+h5.erro {
+    margin: 30px auto;
+}
+
+img.hidden {
+    width: 50px;
+    margin: 0 auto;
+}
+
+.cartButtons {
+    text-align: center;
+    width: 40px;
+    border: none;
+}
+
+div.success {
+    display: none;
+    flex-direction: column;
+}
+
+
+
+
+
+
+@media screen and (min-width: 0px) and (max-width:800px) {   
+
+}

@@ -1,0 +1,21 @@
+{
+	"authors": [{
+
+		"name": "Carlos Rocha",
+		"email": "carcleo@bol.com.br",
+		"role": "Desenvolvedor PHP"
+	}],
+	"autoload": {
+		"psr-4": {
+			"http\\": "http/",
+			"mvc\\": "mvc/",
+			"src\\": "src/"
+		},
+        "files": [
+            "src/support/Helpers.php"
+        ]
+	},
+	"require": {
+		"sumup/sumup-ecom-php-sdk": "^1.0"
+	}
+}
